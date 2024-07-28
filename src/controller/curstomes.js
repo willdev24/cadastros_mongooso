@@ -12,7 +12,7 @@ const registro = new Model({
 })
 registro.save()
 
-    res.rendict("ola mundo")    
+res.redirect("/")
 }
 
     
