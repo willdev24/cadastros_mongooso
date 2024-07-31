@@ -10,8 +10,8 @@ router.get("/cadastro", controllindex.add02)
 router.post("/cadastro/clientes", controllCadastro.cad)
 
 router.use("",(req, res)=>{
-    res.redirect("")
-})
+    res.send("erro, atualize a pagna")
+   })
 
 module.exports={
     router
