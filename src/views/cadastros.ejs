@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+
+    <%- include("partials/header.ejs") %>
     
-<form action="/cadastro/clientes" method="post">
+    
+<form action="/cadastro/clientes" method="post" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
     <label for="name">Nome</label>
     <input type="text" placeholder="nome" name="name">
