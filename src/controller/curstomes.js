@@ -1,16 +1,16 @@
 
-const { criptor } = require("../../ultils/password.js")
+const { criptor } = require("../ultils/password.js")
 const { Model } = require("../module/curstomes")
 
 
-const cad = async (req, res)=>{
+async function cad(req, res){
 const {name, password} = req.body
 
-   // const senha = await criptor(password)//
+    const senha = await criptor(password)//
 
     const registro = new Model({
         name,
-        password
+        password:senha
     })
 
 registro.save()

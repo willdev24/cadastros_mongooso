@@ -1,13 +1,12 @@
 const bcrypt = require('bcrypt')
 
+async function criptor(valor){
 
-
-async function  criptor(valor){
-
+   
 const salt = await bcrypt.genSalt()
-const password = await bcrypt.hash(valor,salt)
+const pass = await bcrypt.hash(valor,salt)
  
-return password
+return pass
 
 }
 
