@@ -32,10 +32,7 @@ const users = await curstomesModel.Model.find()
 const formeDit = async (req,res)=>{
 
 
-
-
-    
- res.render("")
+ res.send("teste")
 }
 
 

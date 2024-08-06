@@ -16,13 +16,11 @@
 <form action="/edit" method="post" style=" font-size: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
     <label for="name">Nome</label>
-    <input type="text" placeholder="nome" name="name">
+    <input type="text" placeholder="nome" name="name" value="<%= user.name %>" >
 
     <label for="email">email</label>
-    <input type="text" placeholder="email" name="email">
+    <input type="text" placeholder="email" name="email" value="<%= user.name %>">
 
-    <label for="password">Senha</label>
-    <input type="text" placeholder="crie uma senha" name="password" id="senha">
     <button style="margin-top: 2%; padding: 10px 20px; " type="submit"> editar</button>
 
 </form>

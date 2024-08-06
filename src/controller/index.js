@@ -1,3 +1,5 @@
+const { Model } = require("../module/curstomes")
+
 function add(req, res){
 
 res.render("index")
@@ -11,8 +13,17 @@ const add02 = (req, res)=>{
 
 const addeDit = async (req,res)=>{
 
-    res.render("editar.ejs")
+    const {id}= req.query
+    const lis= await Model.findById(id) 
+
+
+    res.render("editar.ejs",{
+        title:"editar_cadastro",
+        user: lis,
+
+    })
    }
+ 
    
 
 module.exports={
