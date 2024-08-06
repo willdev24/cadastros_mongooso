@@ -6,25 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="background-color: black; ">
-    <h1 style="margin-left: 100px; color: aliceblue;">cadastrar</h1>
+   
+    <div style="background-color: black; color: aliceblue;">
+    <h1 style="margin-left: 450px;">editar</h1>
     <%- include("partials/header.ejs") %>
-    </div> 
-    
-<form action="/cadastro/clientes" method="post" style=" font-size: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    </div>
+
+      
+<form action="/edit" method="post" style=" font-size: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
     <label for="name">Nome</label>
-    <input type="text" placeholder="nome" name="name" >
+    <input type="text" placeholder="nome" name="name">
 
     <label for="email">email</label>
     <input type="text" placeholder="email" name="email">
 
     <label for="password">Senha</label>
     <input type="text" placeholder="crie uma senha" name="password" id="senha">
-    <button style="padding: 10px 20px; margin-top: 2%;" type="submit"> cadastrar</button>
+    <button style="margin-top: 2%; padding: 10px 20px; " type="submit"> editar</button>
 
 </form>
 
-
+    
 </body>
 </html>

@@ -5,10 +5,11 @@ const mongoose = require("mongoose")
 
         name: String,
         password:String,
+        email:String
         
         })
             
-const Model = new mongoose.model('cadastro', schema)
+const Model = new mongoose.model('cadastros', schema)
 
 
      

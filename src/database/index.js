@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 
 
 function conect(){
-mongoose.connect("mongodb://localhost:27017/primeiro_projeto")
+mongoose.connect("mongodb://localhost:27017/cadastro_claints")
 const mongoDB = mongoose.connection
 mongoDB.once("open",()=>{
 

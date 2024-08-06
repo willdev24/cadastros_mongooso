@@ -5,11 +5,12 @@ const curstomesModel = require("../module/curstomes")
 
 
 async function cad(req, res){
-const {name, password} = req.body
+const {name, password, email} = req.body
 
     const senha = await criptor(password)//
     const registro = new Model({
         name,
+        email,
         password:senha
     })
 
@@ -28,7 +29,18 @@ const users = await curstomesModel.Model.find()
     })
 }
 
+const formeDit = async (req,res)=>{
+
+
+
+
+    
+ res.render("")
+}
+
+
 module.exports={
         cad,
-        lista 
+        lista,
+        formeDit
     }
