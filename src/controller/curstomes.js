@@ -1,6 +1,7 @@
 
 const { criptor } = require("../ultils/password.js")
 const { Model } = require("../module/curstomes")
+const curstomesModel = require("../module/curstomes")
 
 
 async function cad(req, res){
@@ -16,14 +17,14 @@ registro.save()
 res.redirect("/")
 }
 
-const lista = (req, res)=>{
-      
-const users = 
+const lista = async (req, res)=>{
     
-    res.render("lista", {
+const users = await curstomesModel.Model.find()  
 
-        title: lista,
-        dados,      
+    res.render("lista.ejs", {
+
+        title: "listas",
+        users
     })
 }
 

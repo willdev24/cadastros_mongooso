@@ -9,7 +9,7 @@ router.get("/cadastro", controllindex.add02)
 
 router.post("/cadastro/clientes", controllCadastro.cad)
 
-router.get("/listar",controllCadastro.lista)
+router.get("/listar", controllCadastro.lista)
 
 router.use("",(req, res)=>{
     res.send("erro, atualize a pagna")

@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= title %></title>
 </head>
 <body>
 
     <%- include("partials/header.ejs") %>
     
 <p>listas</p>
+<br>
+ 
+<% users.forEach( itens =>{  %>
+      
+   <p style="width: 25%;"><%= itens.name%></p> 
+
+   <p style="width: 25%;"><%= itens.password%></p> <br>
+
+
+<% }) %>
 
 </body>
 </html>
