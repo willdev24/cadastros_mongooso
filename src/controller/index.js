@@ -17,7 +17,7 @@ const addeDit = async (req,res)=>{
     const lis= await Model.findById(id) 
 
 
-    res.render("editar.ejs",{
+    res.render("editar",{
         title:"editar_cadastro",
         user: lis,
 

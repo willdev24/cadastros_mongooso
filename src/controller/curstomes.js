@@ -2,6 +2,8 @@
 const { criptor } = require("../ultils/password.js")
 const { Model } = require("../module/curstomes")
 const curstomesModel = require("../module/curstomes")
+const { model } = require("mongoose")
+const e = require("express")
 
 
 async function cad(req, res){
@@ -30,11 +32,17 @@ const users = await curstomesModel.Model.find()
 }
 
 const formeDit = async (req,res)=>{
+const {id} = req.query 
+const {name, email} = req.body
 
+//const user = await Model.findByid(id)
 
- res.send("teste")
+//user.name = name
+//user.email = email
+
+console.log(name,email, id)
+ res.send("/")
 }
-
 
 module.exports={
         cad,

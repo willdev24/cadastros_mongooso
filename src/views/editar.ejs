@@ -13,7 +13,7 @@
     </div>
 
       
-<form action="/edit" method="post" style=" font-size: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+<form action="/edit?id=<%= user.id %>" method="post" style=" font-size: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
     <label for="name">Nome</label>
     <input type="text" placeholder="nome" name="name" value="<%= user.name %>" >
