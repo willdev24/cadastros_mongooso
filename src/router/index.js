@@ -15,6 +15,8 @@ router.get("/edit" , controllindex.addeDit)
 
 router.post("/edit" , controllCadastro.formeDit)
 
+router.get("/deletar", controllCadastro.delet)
+
 
 router.use("",(req, res)=>{
     res.send("erro, atualize a pagna")

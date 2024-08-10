@@ -40,11 +40,26 @@ user.email = email
 
 user.save()
 
- res.redirect("/listar")
+ res.redirect("/")
 }
+
+
+const delet = async (req, res)=>{
+    const {id} = req.query
+    const excluir = await curstomesModel.Model.deleteOne({_id:id})  
+ 
+
+    
+ //if(excluir.ok){
+   res.redirect("/")
+ //}
+
+}
+
 
 module.exports={
         cad,
         lista,
-        formeDit
+        formeDit,
+        delet
     }
