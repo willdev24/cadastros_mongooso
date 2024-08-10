@@ -2,8 +2,6 @@
 const { criptor } = require("../ultils/password.js")
 const curstomesModel = require("../module/curstomes")
 
-
-
 async function cad(req, res){
 const {name, password, email} = req.body
 
@@ -39,7 +37,6 @@ user.name = name
 user.email = email
 
 user.save()
-
  res.redirect("/")
 }
 
@@ -48,8 +45,6 @@ const delet = async (req, res)=>{
     const {id} = req.query
     const excluir = await curstomesModel.Model.deleteOne({_id:id})  
  
-
-    
  //if(excluir.ok){
    res.redirect("/")
  //}

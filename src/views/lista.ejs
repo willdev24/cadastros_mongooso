@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title><%= title %></title>
 </head>
 <body>
@@ -20,12 +21,18 @@
       
 <ul>
     <li style="display: flex;">
-        <%= itens.name%> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a> <a href="/deletar?id=<%= itens.id%>" ><ul>excluir</ul></a>
+        <%= itens.name%> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a>   <ul style="cursor: pointer;" id="excluir">excluir</ul>
     </li>
 </ul>
 
-
 <% }) %>
+<main>
+<div id="alerta">
+    <p id="sim">nao</p>
+    <p id="nao">sim</p>
+</div>
+</main>
+<script src="/main.js"></script>
 
 </body>
 </html>
