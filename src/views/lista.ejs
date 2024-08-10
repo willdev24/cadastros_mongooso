@@ -19,8 +19,8 @@
 <% users.forEach( itens =>{  %> 
       
 <ul>
-    <li>
-        <%= itens.name%> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a>
+    <li style="display: flex;">
+        <%= itens.name%> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a> <a href="/deletar/<%= itens.id%>" ><ul>excluir</ul></a>
     </li>
 </ul>
 

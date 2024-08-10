@@ -1,14 +1,14 @@
 
 const { criptor } = require("../ultils/password.js")
 const curstomesModel = require("../module/curstomes")
-const { model } = require("mongoose")
+
 
 
 async function cad(req, res){
 const {name, password, email} = req.body
 
     const senha = await criptor(password)//
-    const registro = new Model({
+    const registro = new curstomesModel.Model({
         name,
         email,
         password:senha
