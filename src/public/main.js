@@ -9,7 +9,7 @@ const main ={
 
     buscarhtml: function(){
     this.$excluir = document.querySelectorAll("#excluir")
-    
+    this.$alerta = document.querySelector(".alertaPai")    
     },
 
 
@@ -29,9 +29,14 @@ Evento:{
 
 adicionarClick:function(e){ 
 
-console.log(e)
+const done = this.$alerta.classList.contains("abrir")
+
+if(done == false){
+    this.$alerta.classList.add("abrir")
 
 }
+}
+
 
 
 }    

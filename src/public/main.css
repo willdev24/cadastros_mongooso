@@ -14,27 +14,71 @@ main{
     
 }
 
+.alertaPai{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.533);
+    border-radius: 20PX;
+    border-style: dotted;
+    border-color: red;
+    margin-left: -200%;
+
+}
+
+.abrir{
+    margin-left: 0%;
+}
+
+
+.alertaPai h2{
+    width: 20vw;
+    font-size: 15PX;
+    color: red;
+}
+
+#corpo{
+    justify-content: center;
+}
 #alerta{
     display: flex;
-    background-color: rgb(0, 138, 92);
     padding: 30px 30px;
     font-size: 30px;
-    border-color: black;
     border-radius: 15px;
     cursor: pointer;
     transition: 350ms;
+    justify-content: space-around;
+    width: 20vw;
 }
 
-#nao{
-    margin-left: 30px;
+
+
+#sim , #nao{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 #nao:hover{
     color: red;
 }
 
-#sim{
-    margin-left: 30px;
-}
 #sim:hover{
     color: red;
+}
+
+
+
+#nome{
+    font-size: 25px;
+    }
+
+#listas{
+    height: 10vh;
+    width: 40vw;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
