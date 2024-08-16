@@ -1,7 +1,7 @@
 
 const { criptor } = require("../ultils/password.js")
 const curstomesModel = require("../module/curstomes")
-const { model } = require("mongoose")
+
 
 
 async function cad(req, res){
