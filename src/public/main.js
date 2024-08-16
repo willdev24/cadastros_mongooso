@@ -46,12 +46,21 @@ if(done == false){
 
 Prosseguir: function(e){
 
+    const id = e.target.dataset.local  
+    console.log(id)
+console.log(e.target)
+    const test = "/deletar"
+
+   // window.location.href = window.location.origin + test 
+      
 
 },
 
 retornar:function(e){
 
-    window.location.href = window.location.origin + "/listar"
+    const test = "/listar"
+
+    window.location.href = window.location.origin + test
         
 }
 
