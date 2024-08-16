@@ -10,8 +10,6 @@ const mongoose = require("mongoose")
         })
             
 const Model = new mongoose.model('cadastros', schema)
-
-
      
 module.exports={
 

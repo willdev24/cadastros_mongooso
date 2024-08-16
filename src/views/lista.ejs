@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title><%= title %></title>
 </head>
 <body>
 
-    <div style="background-color: black;">
-        <h1 style="color: rgb(255, 255, 255); margin-left: 150px;" >lista de cadastros</h1>
+    <div id="corpo" style="background-color: black; width: 98vw; ">
+        <h1 style="color: rgb(255, 255, 255); margin-left: 150px; margin-top: 20px; margin-bottom: 30px;" >lista de cadastros</h1>
         <%- include("partials/header.ejs") %>
         
     </div>
    
-<p>listas</p>
+<h2>LISTAS</h2>
 <br>
  
 <% users.forEach( itens =>{  %> 
       
 <ul>
-    <li>
-        <%= itens.name%> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a>
+    <li id="listas" style="display: flex;">
+       <P id="nome"><%= itens.name%></P> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a>   <ul style="cursor: pointer;" id="excluir">excluir</ul>
     </li>
 </ul>
 
-
 <% }) %>
+<main>
+
+    <article class="alertaPai">
+        <h2 id="msg">ALERTA! voce está prestes a apagar permanentemente. caso tenha certesa click em sim, caso contrario click em nao</h2>
+        <div id="alerta">
+            <p id="sim">sim</p>
+            <p id="nao">nao</p>
+        </div>
+    </article>
+</main>
+<script src="/main.js"></script>
 
 </body>
 </html>
