@@ -10,7 +10,7 @@ main{
     color: aliceblue;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: -60vh;
     
 }
 
@@ -30,6 +30,7 @@ main{
 }
 
 .abrir{
+    position: fixed;
     margin-left: 0%;
 }
 

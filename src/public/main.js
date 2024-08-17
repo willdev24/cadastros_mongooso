@@ -59,7 +59,9 @@ this.$apagar.addEventListener('click',function(e){
 
 retornar:function(e){
 
-    window.location.href = window.location.origin + "/listar"
+    const test = "/listar"
+
+    window.location.href = window.location.origin + test
         
 }
 
