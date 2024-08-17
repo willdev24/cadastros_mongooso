@@ -10,7 +10,7 @@ main{
     color: aliceblue;
     display: flex;
     justify-content: center;
-    margin-top: -60vh;
+
     
 }
 
@@ -45,6 +45,7 @@ main{
     justify-content: center;
 }
 #alerta{
+
     display: flex;
     padding: 30px 30px;
     font-size: 30px;
@@ -53,6 +54,7 @@ main{
     transition: 350ms;
     justify-content: space-around;
     width: 20vw;
+    
 }
 
 
