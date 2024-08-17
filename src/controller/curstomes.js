@@ -1,6 +1,7 @@
 
 const { criptor } = require("../ultils/password.js")
 const curstomesModel = require("../module/curstomes")
+const { name } = require("ejs")
 
 async function cad(req, res){
 const {name, password, email} = req.body
@@ -20,8 +21,9 @@ const lista = async (req, res)=>{
     
 const users = await curstomesModel.Model.find()  
 
-    res.render("lista.ejs", {
 
+
+    res.render("lista.ejs", {
         title: "listas",
         users
     })

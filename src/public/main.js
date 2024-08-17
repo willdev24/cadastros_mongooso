@@ -22,8 +22,6 @@ const main ={
             itens.addEventListener('click',self.Evento.adicionarClick.bind(self))            
         });
 
-        this.$apagar.addEventListener('click',self.Evento.Prosseguir.bind(self))
-        
         this.$retornar.addEventListener('click',self.Evento.retornar.bind(self))
     
 
@@ -35,6 +33,7 @@ Evento:{
 
 adicionarClick:function(e){ 
 
+const self = this
 const done = this.$alerta.classList.contains("abrir")
 
 if(done == false){
@@ -42,12 +41,21 @@ if(done == false){
 
 }
 
+self.id = e.target.dataset.local
+
+
+this.$apagar.addEventListener('click',function(e){
+  
+
+    const a = self.id
+    const as = JSON.stringify(a)
+    
+   window.location.href = window.location.origin +"/deletar?id=" + a
+    
+})
+
 },
 
-Prosseguir: function(e){
-
-
-},
 
 retornar:function(e){
 

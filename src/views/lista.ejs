@@ -18,16 +18,18 @@
 <br>
  
 <% users.forEach( itens =>{  %> 
-      
+    
 <ul>
     <li id="listas" style="display: flex;">
-       <P id="nome"><%= itens.name%></P> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a>   <ul style="cursor: pointer;" id="excluir">excluir</ul>
-    </li>
+       <P id="nome"><%= itens.name%></P> <a href="/edit?id=<%= itens.id%>" ><ul>editar</ul></a> 
+        <ul style="cursor: pointer;" id="excluir" data-local="<%=itens.id%>">excluir</ul>
+    </li>                  <!--passo o id aq pelo date-local para pegar o id de cada cadastro na hora de excluir -->
 </ul>
 
 <% }) %>
 <main>
-
+  
+    
     <article class="alertaPai">
         <h2 id="msg">ALERTA! voce está prestes a apagar permanentemente. caso tenha certesa click em sim, caso contrario click em nao</h2>
         <div id="alerta">

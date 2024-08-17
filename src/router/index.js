@@ -15,7 +15,7 @@ router.get("/edit" , controllindex.addeDit)
 
 router.post("/edit" , controllCadastro.formeDit)
 
-//router.get("/deletar", controllCadastro.delet)
+router.get("/deletar", controllCadastro.delet)
 
 
 
